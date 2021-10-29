@@ -1,0 +1,21 @@
+TeamMember	ProductionType	JwlTotalPieces	ProductionScreen
+Cell01	D&D (Refurb)	42	Jeweler
+Cell01	EComm Ring Sizing	23	Jeweler
+Cell02	D&D (Refurb)	10	Jeweler
+Cell02	EComm Ring Sizing	65	Jeweler
+Cell04	D&D (Refurb)	13	Jeweler
+Cell04	EComm Ring Sizing	28	Jeweler
+Cell05	Customer	42	Jeweler
+Cell05	D&D (Refurb)	54	Jeweler
+Cell08	D&D (Refurb)	25	Jeweler
+Cell08	EComm Ring Sizing	64	Jeweler
+Cell09	Customer	3	Jeweler
+Cell09	D&D (Refurb)	39	Jeweler
+Cell09	EComm Ring Sizing	7	Jeweler
+Cell09	RTV - Jeweler	2	Jeweler
+Cell10	Customer	9	Jeweler
+Cell10	D&D (Refurb)	17	Jeweler
+Cell10	EComm Ring Sizing	5	Jeweler
+Cell11	EComm Ring Sizing	33	Jeweler
+Cell13	Central Repair	22	Jeweler
+Cell14	EComm Ring Sizing	14	Jeweler
