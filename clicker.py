@@ -10,7 +10,7 @@ for y in range(0, 100, 10):
         color = image.getpixel((x, y))
 
 def move_mouse(x,y):
-    pyautogui.moveTo(x, y, duration=1)
+    pyautogui.moveTo(x, y, duration=0.1)
 
 def show_desktop():
     move_mouse(1920-3, 1080-3)
