@@ -30,13 +30,11 @@ def click_current_snapshot():
     pyautogui.click()
 
 def copy_database():
-    sleep(0.2)
-    pyautogui.hotkey('ctrl', 'a')
-    sleep(0.2)
-    pyautogui.hotkey('ctrl', 'c')
-    sleep(0.2)
-def exit_window():
     sleep(0.1)
+    pyautogui.hotkey('ctrl', 'a')
+    sleep(0.1)
+    pyautogui.hotkey('ctrl', 'c')
+def exit_window():
     move_mouse(1897, 16)
     pyautogui.click()
 
@@ -77,5 +75,9 @@ print (image.getpixel((268,218)))
 
 print(pyautogui.size())
 print("Done!")
-ctypes.windll.user32.MessageBoxW(0, "Done!", "Cell Data Grabber", 1)
+if data == "":
+    message = "Something went wrong! Try it again."
+else:
+    message = "Done!"
+ctypes.windll.user32.MessageBoxW(0, message, "Cell Data Grabber", 1)
 
