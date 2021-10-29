@@ -33,7 +33,9 @@ def copy_database():
     pyautogui.hotkey('ctrl', 'a')
     sleep(0.1)
     pyautogui.hotkey('ctrl', 'c')
-
+def exit_window():
+    move_mouse(1897, 16)
+    pyautogui.click()
 
 show_desktop()
 click_ic_production()
@@ -62,6 +64,7 @@ while not done:
     if image.getpixel((298,209)) == (135, 131, 131):
         done = True
 copy_database()
+exit_window()
 
 data = pyperclip.paste()
 with open("data.txt", "w") as f:
