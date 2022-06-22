@@ -50,6 +50,4 @@ print(output)
 
 copy(output)
 
-input("> ")
-
 
