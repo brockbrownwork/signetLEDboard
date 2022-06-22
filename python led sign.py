@@ -38,9 +38,9 @@ output = "Since {0}:{1}:\n".format(hour, minute)
 for cell in cells:
     output += f'C{cell} PPH: {pph[cell]}\n'
     output += f'C{cell} goal: {pieces_goal[cell]}\n'
-    output += f'C{cell} {pieces_done[cell]} pcs\n'
+    output += f'C{cell}: {pieces_done[cell]} pcs\n'
     if pieces_left[cell] >= 0:
-        output += f'C{cell} {pieces_left[cell]} left\n'
+        output += f'C{cell}: {pieces_left[cell]} left\n'
 
 print(cells)
 
