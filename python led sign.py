@@ -16,13 +16,13 @@ cell_pph = {}
 
 # load up the PPH goals
 print("Testing pph goals")
-cell_pph_goal = {}
+daily_pieces_goal = {}
 row = 5
 cell = sheet[f"A{row}"].value
 while str(cell).isdigit():
     print(cell)
     print(sheet[f"I{row}"].value)
-    cell_pph_goal[cell] = sheet[f"I{row}"].value
+    daily_pieces_goal[cell] = sheet[f"I{row}"].value
     row += 1
     cell = sheet[f"A{row}"].value
 
@@ -103,7 +103,7 @@ for cell in cells:
         # output += "C{0} done, {1}!\n".format(cell, cells_count[cell])
         cells_done += 1
     else:
-        output += "PPH goal {0}\n".format(cell_pph_goal[cell])
+        output += "Goal {0} pcs\n".format(round(daily_pieces_goal[cell]))
         output += "C{0} {1} done\n".format(cell, cells_count[cell])
         output += "C{0} {1} left\n".format(cell, cell_pieces_needed[cell])
     print(cells_count[cell])
