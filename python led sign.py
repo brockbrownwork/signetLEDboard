@@ -1,7 +1,8 @@
 import pyperclip
-from openpyxl import load_workbook
-workbook = load_workbook(filename = "PPH CALC.xlsx", data_only = True)
-sheet = workbook.active
+
+##from openpyxl import load_workbook
+##workbook = load_workbook(filename = "PPH CALC.xlsx", data_only = True)
+##sheet = workbook.active
 
 row = 5
 print(sheet[f"A{row}"].value)
