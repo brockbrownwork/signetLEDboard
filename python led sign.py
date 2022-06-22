@@ -1,4 +1,4 @@
-import pyperclip
+from pyperclip import copy
 import datetime
 from openpyxl import load_workbook
 
@@ -38,13 +38,18 @@ output = "Since {0}:{1}:\n".format(hour, minute)
 for cell in cells:
     output += f'C{cell} PPH: {pph[cell]}\n'
     output += f'C{cell} goal: {pieces_goal[cell]}\n'
-    output += f'C{cell} {pieces_done[cell]} done\n'
+    output += f'C{cell} {pieces_done[cell]} pcs\n'
     if pieces_left[cell] >= 0:
         output += f'C{cell} {pieces_left[cell]} left\n'
 
 print(cells)
 
+output = output[:-1]
+
 print(output)
 
+copy(output)
+
+input("> ")
 
 
